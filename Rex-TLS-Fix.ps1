@@ -1,3 +1,7 @@
+#---Thanks for checking this out, uhm if you want to make any changes, feel free to clone or fork it and work on whatever you plan to add, tho i doubt there coulde be more you could add, its a simple tool
+#--- Look at me taking this seriously 🤣
+#-- Hope this helps y'all
+
 Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
@@ -10,8 +14,8 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
 
 # --- Configuration ---
 $regPath = "HKLM:\SYSTEM\ControlSet001\Services\RasMan\PPP\EAP\13"
-$BrandColor = [System.Drawing.Color]::FromArgb(163, 22, 33) # A professional "University Crimson"
-$AccentColor = [System.Drawing.Color]::FromArgb(45, 52, 54) # Dark Slate Grey
+$BrandColor = [System.Drawing.Color]::FromArgb(163, 22, 33) 
+$AccentColor = [System.Drawing.Color]::FromArgb(45, 52, 54) 
 
 # --- Main Window Setup ---
 $form = New-Object System.Windows.Forms.Form
@@ -122,7 +126,7 @@ $form.Controls.Add($footer)
 # --- LOGIC ---
 
 $btnApply.Add_Click({
-    # 1. Simulate "Thinking" (User psychology: instant clicks feel broken)
+    # 1. Simulate "Thinking" (User psychology: instant clicks feel broken, basically just to decieve them lol)
     $btnApply.Enabled = $false
     $form.Cursor = [System.Windows.Forms.Cursors]::WaitCursor
     $statusLabel.Text = "Checking registry configuration..."
